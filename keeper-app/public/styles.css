@@ -1,0 +1,65 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* hvi cuộn */
+    scroll-behavior: smooth;
+    font-family: 'McLaren', cursive;
+}
+
+body {
+    background: #eee;
+    height: 2000px;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    color: #fff;
+    background-color: rgb(198, 104, 28);
+    padding: 16px 32px;
+    margin: auto -16px;
+}
+
+/*KEEPER APP*/
+header h1 {
+    color: #fff;
+    font-weight: 1000;
+    text-shadow: 0 7px 5px rgb(32, 31, 3);
+}
+
+#Note {
+    background-color: rgb(219, 181, 181);
+    /*border-radius: 20px;*/
+    box-shadow: 0 2px 5px rgb(32, 31, 3);
+    padding: 10px;
+    width: 150px;
+    margin-top: 90px;
+    float: left;
+}
+
+#Note h1 {
+    font-size: 1em;
+}
+
+#Note p {
+    font-size: 1em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+#content {
+    height: 2000px;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    height: 2em;
+}
