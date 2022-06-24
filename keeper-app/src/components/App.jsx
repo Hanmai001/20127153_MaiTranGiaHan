@@ -23,13 +23,17 @@ function App() {
             });
         });
     }
+    const [checkModify, setCheck] = React.useState(false);
+    function modifyNote() {
+        setCheck(true);
+    }
     return (
         <div>
             <Heading />
             <InputArea onChecked={addNote} />
             {/*Đi qua từng ptu item_arr*/}
             {item_arr.map((item, index) => (
-                <Note key={index} id={index} title={item.title} content={item.content} onChecked={deleteNote} />))}
+                <Note key={index} id={index} title={item.title} content={item.content} onDeleted={deleteNote} onModified={modifyNote} check={checkModify} />))}
             <Footer />
         </div>
     );

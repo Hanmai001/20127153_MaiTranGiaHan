@@ -24,14 +24,14 @@ function InputArea(props) {
     return (
         <div>
             <form>
-                <input onChange={handleChange} name="title" placeholder="Title" value={note.title} required={true} />
+                <input onChange={handleChange} name="title" placeholder="Title" value={note.title}></input>
                 <textarea onChange={handleChange} name="content" placeholder="Take a note..." rows="3" maxLength="1000" value={note.content} />
                 {/*<button onClick={() => {
                     props.onChecked(note);
                     setNote({ title: "", content: "" });
                 }}>
                 */}
-                <button type="submit" onClick={preventRefresh}>
+                <button onClick={preventRefresh}>
                     ADD
                 </button>
             </form>

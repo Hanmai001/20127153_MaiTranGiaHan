@@ -1,12 +1,11 @@
 import React from "react";
 
 function Note(props) {
+    console.log(props.checkModify);
     return <div id="Note">
-        <h1>Title: {props.title === "" ? "None" : props.title}</h1>
-        {/*<p>{props.id}</p>*/}
-        <p>{props.content}</p>
-        <button onClick={() => { props.onChecked(props.id) }}>DELETE</button>
+        <h1 onClick={() => { props.onModified() }} contentEditable={props.check}>{props.title === "" ? "None" : props.title}</h1>
+        <p onClick={() => { props.onModified() }} contentEditable={props.check}>{props.content}</p>
+        <button onClick={() => { props.onDeleted(props.id) }}>DELETE</button>
     </div>
 };
-
 export default Note;
