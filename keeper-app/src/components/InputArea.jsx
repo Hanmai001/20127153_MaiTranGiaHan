@@ -32,7 +32,7 @@ function InputArea(props) {
                 }}>
                 */}
                 <button type="submit" onClick={preventRefresh}>
-                    Add
+                    ADD
                 </button>
             </form>
         </div>
